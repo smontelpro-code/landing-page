@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProKontrol - Traçabilité BTP Nouvelle Génération</title>
+    
+    <meta name="description" content="ProKontrol: Solution de traçabilité digitale pour les contrôles d'équipements BTP. Scannez, contrôlez, tracez.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <nav class="container">
+            <div class="logo-container">
+                <!-- Logo ProKontrol SVG FINAL -->
+                <svg class="logo-icon" viewBox="0 0 272.31378 208.63934" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="#1a4a6e" d="m 0,85.99564 c 0,0 43.30862,-85.33189 136.17555,-85.99221 0.48073,90.83337 0.34152,92.43808 0.3324,208.63592 C 18.6861,139.15967 0,85.99564 0,85.99564 Z" transform="translate(0,-0.04705)" />
+                  <path fill="#1a4a6e" d="m 272.31379,85.99221 c 0,0 -43.30862,-85.33189 -136.17555,-85.99221 -0.48073,90.83337 -0.34152,92.43808 -0.3324,208.63592 117.82185,-69.47968 136.50795,-122.64371 136.50795,-122.64371 z" transform="translate(0,-0.04705)" />
+                  <path fill="#dce3e8" d="m 18.27569,86.99541 c 19.13907,-27.55644 80.35831,-68.31596 117.93852,-67.6879 37.58021,0.62806 85.68893,30.64939 119.82137,67.02435 -31.78746,34.40758 -82.83693,71.31676 -124.03459,70.38938 -41.19766,-0.92738 -86.22876,-41.67072 -113.7253,-69.72583 z" transform="translate(0,-0.04705)" />
+                  <path fill="#dce3e8" d="m 191.70359,115.46977 c 3.87291,13.44051 -8.15857,38.30576 -55.2774,71.65711 -51.081,-38.60925 -60.38594,-62.51266 -60.67009,-71.23593 -0.34586,-81.72779 115.77486,-91.58889 115.94749,-0.42118 z" transform="translate(0,-0.04705)" />
+                  <ellipse fill="#1a4a6e" cx="135.92359" cy="87.93971" rx="59.899994" ry="59.736736" />
+                  <text fill="#f2742c" font-size="132" font-family="Montserrat, Arial, sans-serif" font-weight="800" x="86" y="138.5">K</text>
+                </svg>
+                <div class="logo-text">
+                    <h1>PROKONTROL</h1>
+                    <p>Inspection & Traçabilité BTP</p>
+                </div>
+            </div>
+            <a href="#contact" class="nav-cta">Accès Pilote →</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <span class="hero-badge">🚀 Programme Pilote 2026</span>
+                    <h2>Contrôles réglementaires et suivi de parc,<br><span class="highlight">100% digitalisés</span></h2>
+                    <p>Conformité réglementaire + maintenance préventive. Un seul outil pour tous vos équipements BTP.</p>
+                    <div class="hero-cta-group">
+                        <a href="#contact" class="btn-primary">Rejoindre le pilote →</a>
+                        <!--<a href="#solution" class="btn-secondary">Comment ça marche</a> -->
+                    </div>
+                </div>
+                
+                <div class="hero-mockup">
+                    <div class="phone-frame">
+                        <div class="phone-screen">
+                            <div class="screen-content">
+                                <!-- Phase 1: Scan QR -->
+                                <div class="scan-phase active">
+                                    <div class="qr-being-scanned">
+                                        <img src="https://genqrcode.com/embedded?style=0&inner_eye_style=0&outer_eye_style=0&logo=null&color=%23000000FF&background_color=%23FFFFFFFF&inner_eye_color=%23000000&outer_eye_color=%23000000&imageformat=svg&language=fr&frame_style=0&frame_text=SCAN%20ME&frame_text_icon_color=%23000000&frame_text_icon=null&frame_color=%23000000&frame_background_color=%23FFFFFF&frame_text_color=%23FFFFFF&invert_colors=false&gradient_style=0&gradient_color_start=%23FF0000&gradient_color_end=%237F007F&gradient_start_offset=5&gradient_end_offset=95&stl_type=1&logo_remove_background=null&stl_size=100&stl_qr_height=1.5&stl_base_height=2&stl_include_stands=false&stl_qr_magnet_type=3&stl_qr_magnet_count=0&type=0&text=https%3A%2F%2Fwww.preventionbtp.fr%2Fressources%2Ffocus%2Fverifier-les-equipements-de-chantier-une-obligation-qui-peut-sauver-des-vies_xvwq3WmKsb2MKeG4z49RaJ%3Futm_source%3Dchatgpt.com&width=500&height=500&bordersize=2"
+                                            alt="QR Code"
+                                            class="qr-logo" />
+                                        <div class="scan-overlay">
+                                            <div class="scan-line"></div>
+                                        </div>
+                                    </div>
+                                    <p class="scan-text">Scan en cours...</p>
+                                </div>
+                                
+                                <!-- Phase 2: Checklist progressive -->
+                                <div class="checklist-phase">
+                                    <div class="checklist-header">
+                                        <h3>CONTRÔLE NIVEAU 1</h3>
+                                        <span class="status-badge">En cours</span>
+                                    </div>
+                                    
+                                    <div class="checklist-items">
+                                        <div class="check-item" data-step="1">
+                                            <div class="check-icon">1</div>
+                                            <span>État général de la machine</span>
+                                        </div>
+                                        <div class="check-item" data-step="2">
+                                            <div class="check-icon">2</div>
+                                            <span>Vérification des freins</span>
+                                        </div>
+                                        <div class="check-item" data-step="3">
+                                            <div class="check-icon">3</div>
+                                            <span>Test des commandes</span>
+                                        </div>
+                                        <div class="check-item" data-step="4">
+                                            <div class="check-icon">4</div>
+                                            <span>Dispositifs de sécurité</span>
+                                        </div>
+                                        <div class="check-item" data-step="5">
+                                            <div class="check-icon">5</div>
+                                            <span>Plaque signalétique</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Phase 3: Success -->
+                                <div class="success-phase">
+                                    <div class="success-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                    <div class="success-text">Contrôle envoyé !</div>
+                                    <div class="success-subtext">Traçabilité complète enregistrée</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">~70%</div>
+                    <div class="stat-label">de temps économisé</div>
+                    <div class="stat-context">estimé vs. contrôle papier</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">traçabilité digitale</div>
+                    <div class="stat-context">horodatage & géolocalisation</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">0</div>
+                    <div class="stat-label">fiche perdue</div>
+                    <div class="stat-context">stockage cloud sécurisé</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">2-3min</div>
+                    <div class="stat-label">par contrôle</div>
+                    <div class="stat-context">contrôle guidé sur smartphone</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Value Props Section -->
+    <section class="value-props">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Deux besoins, une solution</span>
+                <h2 class="section-title">Conformité réglementaire<br>+ Gestion de parc optimisée</h2>
+                <p class="section-subtitle">ProKontrol couvre tous vos besoins de traçabilité, qu'ils soient obligatoires ou internes.</p>
+            </div>
+            
+            <div class="bento-grid">
+                <div class="bento-card card-regulatory">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2L3 7V11C3 16.55 6.84 21.74 12 23C17.16 21.74 21 16.55 21 11V7L12 2Z" stroke="#16a34a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9 12L11 14L15 10" stroke="#16a34a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="card-title-group">
+                            <h3>Contrôles Réglementaires</h3>
+                            <span class="card-badge badge-regulatory">Obligatoires par la loi</span>
+                        </div>
+                    </div>
+                    
+                    <p class="card-description">Nacelles, grues, chariots élévateurs, accessoires de levage... ProKontrol vous met en conformité avec le Code du travail.</p>
+                    
+                    <div class="card-benefits">
+                        <p class="benefits-title">Avantages clés</p>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <span class="benefit-text"><strong>Zéro amende</strong> — Inspections du travail sereines</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <span class="benefit-text"><strong>Sécurité maximale</strong> — Protection juridique de votre entreprise</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <span class="benefit-text"><strong>Alertes automatiques</strong> — Ne ratez plus aucune échéance</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <span class="benefit-text"><strong>Historique complet</strong> — Preuves instantanées en cas de contrôle</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bento-card card-internal">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="12" r="9" stroke="#f2742c" stroke-width="2"/>
+                                <path d="M12 8V12L14.5 14.5" stroke="#f2742c" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <div class="card-title-group">
+                            <h3>Suivi de Parc Complet</h3>
+                            <span class="card-badge badge-internal">Politique interne</span>
+                        </div>
+                    </div>
+                    
+                    <p class="card-description">Pelleteuses, compacteurs, engins de terrassement... Tracez TOUS vos équipements pour une maintenance optimale.</p>
+                    
+                    <div class="card-benefits">
+                        <p class="benefits-title">Avantages clés</p>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <span class="benefit-text"><strong>Moins de pannes</strong> — Maintenance préventive = moins d'arrêts</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <span class="benefit-text"><strong>Durée de vie prolongée</strong> — Entretenez, valorisez, revendez mieux</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <span class="benefit-text"><strong>Certifications facilitées</strong> — ISO 9001, Mase... tout est tracé</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✓</span>
+                            <span class="benefit-text"><strong>Vision 360°</strong> — Tous vos équipements en un coup d'œil</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bento-card card-cta">
+                    <div class="cta-content">
+                        <h3 class="cta-title">Une seule plateforme pour tout gérer</h3>
+                        <p class="cta-description">Que vos contrôles soient imposés par la loi ou par votre politique qualité, ProKontrol centralise tout.</p>
+                        <a href="#contact" class="cta-button">Rejoindre le programme pilote →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="trust">
+        <div class="container">
+            <h3>Solution développée avec les professionnels du BTP</h3>
+            
+            <div class="trust-grid">
+                <div class="trust-point">
+                    <div class="trust-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h4>Conçu pour le terrain</h4>
+                    <p>Développé avec la volonté de rester simple et facile d'utilisation</p>
+                </div>
+                
+                <!--<div class="trust-point">
+                    <div class="trust-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h4>Cadre réglementaire</h4>
+                    <p>Conforme aux obligations de vérification (Article R4323-23 du Code du Travail)</p>
+                </div>-->
+                
+                <div class="trust-point">
+                    <div class="trust-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h4>Programme pilote</h4>
+                    <p>Tester l'outil et soyez prioritaire sur son évolution</p>
+                </div>
+            </div>
+            
+            <div class="legal-reminder">
+                <div class="legal-icon">ℹ️</div>
+                <div class="legal-text">
+                    <strong>Rappel réglementaire</strong>
+                    <p>Les équipements de travail doivent faire l'objet de vérifications périodiques (Article R4323-22 du Code du Travail).
+                    <a href="https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006072050/LEGISCTA000018489757/#LEGISCTA000018531487" target="_blank" rel="noopener" class="legal-link">
+                        Consulter le texte officiel →
+                    </a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section" id="contact">
+        <div class="container">
+            <div class="cta-content">
+                <p class="section-label">Programme Pilote 2026</p>
+                <h3>Rejoignez les pionniers</h3>
+                <p>Accès anticipé, 2 mois gratuits, accompagnement personnalisé. Places limitées.</p>
+                
+                <div class="signup-form">
+                    <h4>Demandez votre accès pilote</h4>
+                    <form id="leadForm">
+                        <div class="form-group">
+                            <label for="email">Email professionnel *</label>
+                            <input type="email" id="email" name="email" required placeholder="votre@entreprise.fr">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="fleet-size">Taille de votre parc *</label>
+                            <select id="fleet-size" name="fleet-size" required>
+                                <option value="">Sélectionnez...</option>
+                                <option value="1-10">1 à 10 équipements</option>
+                                <option value="10-50">10 à 50 équipements</option>
+                                <option value="50-200">50 à 200 équipements</option>
+                                <option value="200+">Plus de 200 équipements</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="equipment-type">Types d'équipements principaux *</label>
+                            <select id="equipment-type" name="equipment-type" required>
+                                <option value="">Sélectionnez...</option>
+                                <option value="nacelles">Nacelles et PEMP</option>
+                                <option value="echafaudages">Échafaudages</option>
+                                <option value="grues">Grues et appareils de levage</option>
+                                <option value="accessoires">Accessoires de levage (élingues, chaînes)</option>
+                                <option value="chariots">Chariots élévateurs et gerbeurs</option>
+                                <option value="terrassement">Engins de terrassement (pelles, bulldozers)</option>
+                                <option value="compacteurs">Compacteurs et rouleaux</option>
+                                <option value="autres-engins">Autres engins de chantier</option>
+                                <option value="mixte">Parc mixte</option>
+                                <option value="autre">Autre équipement</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Téléphone (optionnel)</label>
+                            <input type="tel" id="phone" name="phone" placeholder="06 12 34 56 78">
+                        </div>
+                        
+                        <button type="submit" class="submit-button">Rejoindre le programme pilote →</button>
+                        
+                        <!--<p class="form-footer">
+                            Besoin d'échanger avant ? <a href="/cdn-cgi/l/email-protection#f99a96978d989a8db9898b969296978d8b9695d79f8b">Contactez-nous</a>
+                        </p>--->
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h1>PROKONTROL</h1>
+                    <p>Simplifions la traçabilité BTP</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 ProKontrol. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+        
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const offset = 80;
+                    const targetPosition = target.offsetTop - offset;
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Animation du mockup téléphone - Attendre le chargement du DOM
+        window.addEventListener('DOMContentLoaded', function() {
+            const scanPhase = document.querySelector('.scan-phase');
+            const checklistPhase = document.querySelector('.checklist-phase');
+            const successPhase = document.querySelector('.success-phase');
+            const checkItems = document.querySelectorAll('.check-item');
+            
+            if (!scanPhase || !checklistPhase || !successPhase || checkItems.length === 0) {
+                console.error('Éléments d\'animation non trouvés');
+                return;
+            }
+            
+            let currentPhase = 'scan';
+            let currentCheckItem = 0;
+        
+        function resetAnimation() {
+            scanPhase.classList.remove('active');
+            checklistPhase.classList.remove('active');
+            successPhase.classList.remove('active');
+            checkItems.forEach(item => {
+                item.classList.remove('validating', 'validated');
+            });
+            currentCheckItem = 0;
+        }
+        
+        function startAnimation() {
+            resetAnimation();
+            
+            // Phase 1: Scan (2 secondes)
+            scanPhase.classList.add('active');
+            
+            setTimeout(() => {
+                // Phase 2: Checklist (5 secondes - 1 sec par item)
+                scanPhase.classList.remove('active');
+                checklistPhase.classList.add('active');
+                
+                validateNextItem();
+            }, 2000);
+        }
+        
+        function validateNextItem() {
+            if (currentCheckItem < checkItems.length) {
+                const item = checkItems[currentCheckItem];
+                
+                // Marquer comme en cours de validation
+                item.classList.add('validating');
+                item.querySelector('.check-icon').textContent = '⟳';
+                
+                setTimeout(() => {
+                    // Marquer comme validé
+                    item.classList.remove('validating');
+                    item.classList.add('validated');
+                    item.querySelector('.check-icon').textContent = '✓';
+                    
+                    currentCheckItem++;
+                    
+                    if (currentCheckItem < checkItems.length) {
+                        // Passer au prochain item
+                        setTimeout(() => validateNextItem(), 200);
+                    } else {
+                        // Tous les items validés, afficher le succès
+                        setTimeout(() => {
+                            checklistPhase.classList.remove('active');
+                            successPhase.classList.add('active');
+                            
+                            // Recommencer après 2 secondes
+                            setTimeout(() => startAnimation(), 2000);
+                        }, 500);
+                    }
+                }, 1000);
+            }
+        }
+        
+        // Démarrer l'animation au chargement
+        setTimeout(() => startAnimation(), 1000);
+        }); // Fin DOMContentLoaded pour l'animation
+        
+        // Form submission
+        const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzZ2NUJNfznAmbqL7IvztCW_xczh18jnVX6UaQgZU13Fnx0PlH3qgSeVQk7tgVwhKE/exec';
+
+        document.getElementById('leadForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            // Désactiver le bouton pendant l'envoi
+            const submitButton = this.querySelector('.submit-button');
+            const originalButtonText = submitButton.textContent;
+            submitButton.disabled = true;
+            submitButton.textContent = '⏳ Envoi en cours...';
+            
+            const formData = {
+                email: document.getElementById('email').value,
+                fleetSize: document.getElementById('fleet-size').value,
+                equipmentType: document.getElementById('equipment-type').value,
+                phone: document.getElementById('phone').value,
+                timestamp: new Date().toISOString(),
+                source: 'landing_page_pilote'
+            };
+            
+            try {
+                const response = await fetch(APPS_SCRIPT_URL, {
+                    method: 'POST',
+                    mode: 'no-cors', // Important pour Apps Script
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(formData)
+                });
+                
+                // Avec no-cors, on ne peut pas lire la réponse, mais pas d'erreur = succès
+                console.log('Lead Programme Pilote envoyé:', formData);
+                
+                alert('🎉 Bienvenue dans le Programme Pilote ProKontrol !\n\n' +
+                    'Vous recevrez votre accès anticipé par email sous 24h.\n\n' +
+                    '✅ 6 mois gratuits\n' +
+                    '✅ Accompagnement personnalisé\n' +
+                    '✅ Accès anticipé aux nouvelles fonctionnalités');
+                
+                // Reset form
+                this.reset();
+                
+            } catch (error) {
+                console.error('Erreur lors de l\'envoi:', error);
+                alert('❌ Une erreur est survenue. Veuillez réessayer ou nous contacter directement.');
+            } finally {
+                // Réactiver le bouton
+                submitButton.disabled = false;
+                submitButton.textContent = originalButtonText;
+            }
+        });
+    </script>
+</body>
+</html>
