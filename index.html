@@ -7,6 +7,15 @@
     
     <meta name="description" content="Kontroo: Solution de traçabilité digitale pour les contrôles d'équipements BTP. Scannez, contrôlez, tracez.">
     
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X8XB2XN8CH"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-X8XB2XN8CH');
+    </script>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -393,6 +402,19 @@
         
         // Animation du mockup téléphone - Attendre le chargement du DOM
         window.addEventListener('DOMContentLoaded', function() {
+            
+            // Tracking des clics sur les boutons CTA
+            document.querySelectorAll('a[href="#contact"]').forEach(button => {
+                button.addEventListener('click', function() {
+                    if (typeof gtag !== 'undefined') {
+                        gtag('event', 'cta_click', {
+                            'event_category': 'Engagement',
+                            'event_label': this.textContent.trim()
+                        });
+                    }
+                });
+            });
+            
             const scanPhase = document.querySelector('.scan-phase');
             const checklistPhase = document.querySelector('.checklist-phase');
             const successPhase = document.querySelector('.success-phase');
@@ -505,7 +527,18 @@
                 // Avec no-cors, on ne peut pas lire la réponse, mais pas d'erreur = succès
                 console.log('Lead Programme Pilote envoyé:', formData);
                 
+                // Tracking Google Analytics - Événement de conversion
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'form_submit', {
+                        'event_category': 'Lead',
+                        'event_label': 'Programme Pilote',
+                        'fleet_size': formData.fleetSize,
+                        'equipment_type': formData.equipmentType
+                    });
+                }
+                
                 alert('🎉 Bienvenue dans le Programme Pilote Kontroo !\n\n' +
+                    'Un mail de confirmation vous a été envoyé à ' + formData.email + ', vérifiez vos spams.\n\n' +
                     'Nous vous contactons sous 24h afin de convenir d\'un rendez-vous et vous faire participer au programme.\n\n' +
                     '✅ 1 mois gratuits\n' +
                     '✅ Accompagnement personnalisé\n' +
