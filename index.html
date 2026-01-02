@@ -332,8 +332,8 @@
                         </div>
                         
                         <div class="form-group">
-                            <label for="phone">Téléphone</label>
-                            <input type="tel" id="phone" name="phone" placeholder="06 XX XX XX XX">
+                            <label for="phone">Téléphone *</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="06 XX XX XX XX">
                         </div>
                         
                         <button type="submit" class="submit-button">Rejoindre le programme pilote →</button>
@@ -467,6 +467,7 @@
         
         // Form submission
         const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwJAk8WyONSsNK8H3JAbpXiQ0QF9E2bGzgypSLRBhPukf2Y8nWxTiny6tbnNbeooakP/exec';
+
 
         document.getElementById('leadForm').addEventListener('submit', async function(e) {
             e.preventDefault();
