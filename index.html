@@ -295,8 +295,16 @@
                     <h4>Demandez votre accès pilote</h4>
                     <form id="leadForm">
                         <div class="form-group">
+                            <label for="name">Prénom NOM *</label>
+                            <input type="text" id="name" name="name" required placeholder="Jean DUPONT">
+                        </div>
+                        <div class="form-group">
                             <label for="company">Entreprise *</label>
                             <input type="text" id="company" name="company" required placeholder="Nom de votre entreprise">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Téléphone </label>
+                            <input type="tel" id="phone" name="phone" placeholder="06 XX XX XX XX">
                         </div>
                         <div class="form-group">
                             <label for="email">Email professionnel *</label>
@@ -329,11 +337,6 @@
                                 <option value="mixte">Parc mixte</option>
                                 <option value="autre">Autre équipement</option>
                             </select>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="phone">Téléphone *</label>
-                            <input type="tel" id="phone" name="phone" required placeholder="06 XX XX XX XX">
                         </div>
                         
                         <button type="submit" class="submit-button">Rejoindre le programme pilote →</button>
@@ -479,6 +482,7 @@
             submitButton.textContent = '⏳ Envoi en cours...';
             
             const formData = {
+                name: document.getElementById('name').value,
                 company: document.getElementById('company').value,
                 email: document.getElementById('email').value,
                 fleetSize: document.getElementById('fleet-size').value,
